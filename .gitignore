@@ -1,0 +1,4 @@
+# 项目排除路径
+/api-commons/target/
+/cloud-provide-payment/target/
+/could-consumer-order/target/

@@ -1,0 +1,5 @@
+server:
+  port: 35731
+spring:
+  application:
+    name: mexcel-service-order  #服务名

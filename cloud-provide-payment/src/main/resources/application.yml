@@ -1,0 +1,22 @@
+server:
+  port: 35730 #服务端口
+#spring相关配置
+spring:
+  application:
+    name: mexcel-payment  #服务名
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource  #当前数据源操作类型
+    driver-class-name: org.gjt.mm.mysql.Driver  #数据库驱动包
+    url: jdbc:mysql://localhost:3306/furniture?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false
+    username: root
+    password: 2274EA4F
+    druid:
+      test-while-idle: true
+      validation-query: SELECT 1
+    
+#    resources:
+#      static-locations: classpath:/META-INF/resources/,classpath:/resources/, classpath:/static/, classpath:/public/
+#mybatis:配置
+mybatis:
+  mapperLocations: classpath:dao/*.xml
+  type-aliases-package: com.mexcel.pojo    # 所有pojo别名类所在包
